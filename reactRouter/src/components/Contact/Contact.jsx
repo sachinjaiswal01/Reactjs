@@ -38,7 +38,7 @@ export default function Contact() {
                                     />
                                 </svg>
                                 <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                                    Acme Inc, Street, State, Postal Code
+                                    Bhodhi,Utter pradesh 221314,India
                                 </div>
                             </div>
 
@@ -60,8 +60,7 @@ export default function Contact() {
                                     />
                                 </svg>
                                 <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                                    +44 1234567890
-                                </div>
+                                    +91 91517045XX                                </div>
                             </div>
 
                             <div className="flex items-center mt-2 text-gray-600">
@@ -82,7 +81,7 @@ export default function Contact() {
                                     />
                                 </svg>
                                 <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                                    info@acme.org
+                                    jayswalsachin012@gmail.com
                                 </div>
                             </div>
                         </div>
