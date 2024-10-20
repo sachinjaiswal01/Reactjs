@@ -14,3 +14,8 @@ It helps users see which page they're on by changing the style of the active lin
 
  #useEffect
  jab bhi component load hoga effect le aayega
+
+
+# context Api
+https://excalidraw.com/#json=IH7cUiu48ScjmNcWKubjC,1MXQtmbyLbPGXbogjozOHw
+
