@@ -10,33 +10,34 @@ app.get('/',(req,res)=>{
 // Get a list of 5 jokes
 
 app.get('/api/jokes',(req,res)=>{
-    const jokes = [
+    const jokes = 
+    [
         {
-            id: 1,
-            title: 'A joke',
-            content: 'This is a joke'
+          id: 1,
+          title: "Debugging",
+          content: "Debugging: Removing the needles from the haystack."
         },
         {
-            id: 2,
-            title: 'Another joke',
-            content: 'This is another joke'
+          id: 2,
+          title: "Wi-Fi Password",
+          content: "Why was the computer cold? It left its Windows open!"
         },
         {
-            id: 3,
-            title: 'Funny story',
-            content: 'This is a funny story'
+          id: 3,
+          title: "SQL Joke",
+          content: "Why do SQL developers always party alone? They don't like to join tables!"
         },
         {
-            id: 4,
-            title: 'Random thought',
-            content: 'This is a random thought'
+          id: 4,
+          title: "404",
+          content: "I tried to make a joke about a missing file, but I couldn't find the 404 punchline!"
         },
         {
-            id: 5,
-            title: 'A pun',
-            content: 'This is a pun'
-        }        
-    ]
+          id: 5,
+          title: "Java vs. JavaScript",
+          content: "Java and JavaScript are like car and carpet – completely unrelated!"
+        }
+    ];
     res.send(jokes);
 })
 
