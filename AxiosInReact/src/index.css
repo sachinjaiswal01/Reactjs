@@ -1,0 +1,125 @@
+body{
+  background-color: #1a1d21;
+}
+/* Container Grid Styling */
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+  gap: 1.5rem; /* Spacing between items */
+  padding: 1rem;
+  background-color: #1a1d21; /* Darker background for the container */
+  border-radius: 10px;
+  overflow: hidden; /* Prevent content from spilling out */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr); /* Switch to 3 columns on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr); /* Switch to 2 columns on small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    grid-template-columns: 1fr; /* Single column on very small screens */
+  }
+}
+
+/* Individual Grid Items (Cards) Styling */
+.grid-item {
+  background-color: #157ae0; /* Dark gray for card background */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(67, 39, 39, 0.8); /* Deep shadow for depth */
+  padding: 1rem;
+  text-align: center;
+  position: relative; /* Allow content to "pop up" */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.grid-item:hover {
+  transform: translateY(-10px); /* Slightly lift the card */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 1); /* Stronger shadow on hover */
+  background-color: #2f343a; /* Slightly lighter dark shade on hover */
+}
+
+/* Movie Main Content Pop-up Effect */
+.main-character {
+  position: relative;
+  top: -10px; /* Pop up slightly out of the container */
+  background: #1b2027; /* Slightly lighter dark shade for contrast */
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(36, 21, 21, 0.7); /* Shadow for pop-up content */
+  transition: top 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-item:hover .main-character {
+  top: -20px; /* Pop up even more on hover */
+  transform: scale(1.03); /* Slight scaling effect for emphasis */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 1); /* Stronger shadow for pop-up */
+}
+
+/* Poster Styling */
+/* Poster Container */
+.poster-container {
+  display: flex; /* Flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  overflow: hidden;
+  border-radius: 5px;
+  width: 90%; /* Full width of its parent */
+  margin: 0 auto; /* Center the container itself */
+  padding: 10px; /* Optional: Add padding for spacing */
+  background-color: #1a222b; /* Dark background for contrast */
+}
+
+/* Poster */
+.poster {
+  width: 100%; /* Full width of the container */
+  max-width: 150px; /* Limit size of the poster */
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.5s ease;
+}
+
+.poster-container:hover .poster {
+  transform: scale(1.1); /* Zoom effect on hover */
+}
+
+
+/* Ticket Button Styling */
+.ticket-container {
+  padding: 1rem;
+  width: 100%;
+}
+
+.ticket__content {
+  display: flex;
+  justify-content: center;
+}
+
+.ticket__but-btn {
+  
+  background-color: #7289da; /* Accent color for the button */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.ticket__but-btn:hover {
+  background-color: #5b6eae; /* Slightly darker on hover */
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+}
